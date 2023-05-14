@@ -8,3 +8,9 @@ class student(models.Model):
     address = models.CharField(max_length=255,default='mmm adress')
 
     
+    def __str__(self):
+        return self.name
+    
+
+    class Meta:
+        verbose_name = 'Students Names'
