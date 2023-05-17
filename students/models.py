@@ -13,4 +13,10 @@ class student(models.Model):
     
 
     class Meta:
-        verbose_name = 'Students Names'
+        verbose_name = 'Students Name'
+
+
+
+class login(models.Model):
+        username = models.CharField(max_length=50, null=True)
+        password = models.CharField(max_length=50, null=True)
